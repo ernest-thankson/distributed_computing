@@ -58,17 +58,32 @@
 	}
 
 int main(void){
-	printf("hello\n");
+	
 	/*Dynamically generate the 4 arrays */
 	int *a1, *a2, *a3, *a4;
-	a1 = (int *) malloc(1 * 10 * sizeof(int));
-/*	a2 = (int *) malloc(100 * 100 * 100 * sizeof(int));
+	a1 = (int *) malloc(100 * 100 * sizeof(int));
+	a2 = (int *) malloc(100 * 100 * 100 * sizeof(int));
 	a3 = (int *) malloc(50 * 50 * 50 * 50 * sizeof(int));
-	a4 = (int *) malloc(20 * 20 * 20 * 20 * 20 * sizeof(int));*/
+	a4 = (int *) malloc(20 * 20 * 20 * 20 * 20 * sizeof(int));
 	printf("hello.");
-	initialize(a1, 100*100);
+}	initialize(a1, 100*100);
 	setones(a1, 100*100);
 	printer(a1,100*100, 2);
 	free(a1);
+	initialize(a2, 100*100);
+	setones(a2, 100*100);
+	printer(a2,100*100, 2);
+	free(a2);
+	initialize(a3, 100*100);
+	setones(a3, 100*100);
+	printer(a3,100*100, 2);
+	free(a3);
+	initialize(a4, 100*100);
+	setones(a4, 100*100);
+	printer(a4,100*100, 2);
+	free(a4);
 	
-}
+
+
+
+
